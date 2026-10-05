@@ -399,7 +399,7 @@ function removeFromShop(productId) {
     let product = document.querySelector(`.popup[data-popup-name="shop"] .row .product[data-product-id="${productId}"]`);
     product.parentElement.parentElement.remove();
 
-    let buttonsOffLatest = document.querySelector(`#latestv.product[data-product-id="${productId}"] button`);
+    let buttonsOffLatest = document.querySelector(`#latest .product[data-product-id="${productId}"] button`);
 
 
     removeFromCart(productId, that)
