@@ -402,7 +402,7 @@ function removeFromShop(productId) {
     let buttonsOffLatest = document.querySelector(`#latest .product[data-product-id="${productId}"] button`);
 
 
-    removeFromCart(productId, that)
+     removeFromCart(productId, buttonsOffLatest);
     if (cartProduct.length == 0) {
         let content = document.querySelector(`.popup[data-popup-name="shop"] .row`);
         content.innerHTML = `
